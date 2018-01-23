@@ -6,6 +6,11 @@ class Largest
 	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
+		if (n<=0)
+		{
+			System.out.println("Invalid input");
+			System.exit(0);
+		}
 		int arr[]=new int[n];
 		int i=0;
 		for(i=0;i<n;i++)
